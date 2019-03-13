@@ -6,7 +6,7 @@
 ## Installation
 
 ```bash
-dotnet tool install -g wk.RunCode
+dotnet tool update -g wk.RunCode
 ```
 
 ## Usage

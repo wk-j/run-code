@@ -1,0 +1,4 @@
+d-cake Install
+
+//
+dotnet cake -target=Install
