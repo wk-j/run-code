@@ -9,8 +9,10 @@ let main argv =
         | _ -> DirectoryInfo(".").FullName
 
     let command =
-        """docker run -d --name code-server -p 8888:8443 -v "{path}:/root/project" codercom/code-server code-server --allow-http --no-auth"""
+        """docker run -d --name code-server -p 9999:8443 -v "{path}:/root/project" codercom/code-server --allow-http --no-auth"""
             .Replace("{path}", path)
+
+    printfn "> %s" command
 
     PS("docker stop code-server")
     PS("docker rm code-server")
